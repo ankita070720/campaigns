@@ -17,7 +17,7 @@ function CampaignsTable() {
  
  const addCampaigns = async () => {
    return  await axios
-   .get("http://localhost:5000/campaigns")
+   .get("https://ankita070720.github.io/campaigns:5000/campaigns")
    .then((response)=>{setCampaigns(response.data); setAllCampaigns(response.data);})
    .catch((err)=> console.log(err));
  };
@@ -29,7 +29,7 @@ function CampaignsTable() {
  
  const handleSearch = async(e) => {
    e.preventDefault();
-   return await axios.get(`http://localhost:5000/campaigns?q=${value}`)
+   return await axios.get(`https://ankita070720.github.io/campaigns/:5000/campaigns?q=${value}`)
    .then((response)=>{
      setCampaigns(response.data);
      setValue("");

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/campaigns/static/css/main.bf51ddd6.css",
+    "main.js": "/campaigns/static/js/main.6291d855.js",
+    "index.html": "/campaigns/index.html",
+    "main.bf51ddd6.css.map": "/campaigns/static/css/main.bf51ddd6.css.map",
+    "main.6291d855.js.map": "/campaigns/static/js/main.6291d855.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf51ddd6.css",
+    "static/js/main.6291d855.js"
+  ]
+}

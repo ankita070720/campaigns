@@ -4,7 +4,15 @@ import App from './App';
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import { StrictMode } from "react";
 
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("data.json");
+const middlewares = jsonServer.default();
+const = process.env.PORT || 8080;
 
+server.use(middlewares);
+server.use(router);
+server.listen(port);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <StrictMode>

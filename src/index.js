@@ -4,6 +4,14 @@ import App from './App';
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import { StrictMode } from "react";
 
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+<StrictMode>
+    <App />
+  </StrictMode>
+);
+
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("data.json");
@@ -13,12 +21,6 @@ const = process.env.PORT || 8080;
 server.use(middlewares);
 server.use(router);
 server.listen(port);
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-<StrictMode>
-    <App />
-  </StrictMode>
-);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

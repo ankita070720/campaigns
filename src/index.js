@@ -12,15 +12,7 @@ root.render(
   </StrictMode>
 );
 
-const jsonServer = require("json-server");
-const server = jsonServer.create();
-const router = jsonServer.router("data.json");
-const middlewares = jsonServer.default();
-const = process.env.PORT || 8080;
 
-server.use(middlewares);
-server.use(router);
-server.listen(port);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
